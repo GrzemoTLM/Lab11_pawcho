@@ -48,7 +48,5 @@ echo "Dostępne adresy:"
 echo "- web1: http://localhost:8081"
 echo "- web2: http://localhost:8082"
 echo "- web3: http://localhost:8083"
-
 echo ""
-echo "Aby zatrzymać wszystkie kontenery, użyj: docker stop web1 web2 web3"
-echo "Aby usunąć wszystkie kontenery, użyj: docker rm web1 web2 web3"
+
