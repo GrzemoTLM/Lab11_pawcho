@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorium 11</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .info {
+            font-size: 1.2em;
+            margin: 15px 0;
+            padding: 10px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        .server-info {
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔬 Laboratorium 11</h1>
+        <div class="info">
+            <strong>📚 Numer laboratorium:</strong> 11
+        </div>
+        <div class="info">
+            <strong>👤 Student:</strong> Grzegorz Łukomski
+        </div>
+        <div class="info">
+            <strong>🌐 Temat:</strong> Sterowniki sieciowe w Docker
+        </div>
+        <div class="server-info">
+            <p><strong>🖥️ Serwer:</strong> nginx:latest</p>
+            <p><strong>🕒 Data:</strong> <span id="current-date"></span></p>
+            <p><strong>🔗 Kontener:</strong> <span id="container-name">nginx-server</span></p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('current-date').textContent = new Date().toLocaleString('pl-PL');
+    </script>
+</body>
+</html>
